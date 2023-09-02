@@ -877,9 +877,9 @@
             <img src="./images/feature-section1-dottedrows.png" alt=""
             class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10">
 
-            <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
                 <!-- item 1 -->
-                <div class="relative flex items-center z-0">
+                <div class="relative flex items-center z-0 mx-auto">
                     <h2 class="text-deepBlueHead 
                     font-mullish font-extrabold text-4xl leading-[3.375rem]">New in the
                         <span class="text-lightBlue">Razorpay</span>
@@ -998,8 +998,8 @@
 
     <!-- core features -->
     <section class="relative w-full bg-[url(./images/core-features-sectionBg.svg)]
-    bg-no-repeat bg-cover  mt-14 corefeaturesection">
-        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+    bg-no-repeat bg-cover mt-6 md:mt-14 corefeaturesection bg-center">
+        <div class="relative w-10/12 lg:w-11/12 max-w-[1080px] mx-auto pt-4 ">
             <h2 class="font-mullish font-bold text-2xl text-center
             text-white">Features</h2>
             <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
@@ -1007,7 +1007,7 @@
             text-white mx-auto">Empower your business with all the right tools to
                  accept online payments and provide the best customer experience</p>
 
-            <div class="grid grid-cols-4 gap-[2rem] mt-8 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8 ">
                 <!-- card1 -->
                 <div>
                     <img src="./images/instant-activation-icon.svg" alt="">
@@ -1079,9 +1079,9 @@
 
     <!-- Join razorpay section -->
   <section class=" relative bg-[#f5f8fe] pt-40 pb-12 -mt-[200px] -z-[100]">
-    <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+    <div class=" w-10/12 md:w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row">
       <!-- Left part -->
-      <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+      <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)]">
         <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ businesses using Razorpay
           </h2>
         <div class="w-6 h-1 bg-greenLight mb-10 my-4 "></div>
@@ -1091,7 +1091,7 @@
       </div>
 
       <!-- Right Part -->
-      <div class="h-[500px] w-[500px] relative overflow-y-hidden ">
+      <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
 
         <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
         class="absolute w-full h-[150px] top-0 z-50">
@@ -1112,7 +1112,8 @@
   <section class="relative w-full">
     <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
       <img src="./images/feature-section1-dottedrows.png" alt=""
-      class="absolute w-[200px] top-[8rem] left-[2rem] -z-[10]">
+      class="absolute w-[200px] top-[8rem] left-[2rem] -z-[10]
+      hidden md:block">
       <h2 class="font-mullish font-bold text-2xl text-center
        text-deepBlueHead">An Experience
         <br>
@@ -1122,7 +1123,7 @@
     
 
     <!-- left button -->
-    <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff]
+    <button class="absolute w-[36px] h-[36px] md:w-[100px] md:h-[100px] bg-[#f4f8ff]
     rounded-full left-0 top-1/2 flex justify-center items-center ">
       <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full 
       flex justify-center items-center mix-blend-multiply">
@@ -1134,7 +1135,7 @@
     </button>
 
     <!-- right button -->
-    <button class="absolute w-[100px] h-[100px] bg-[#f4f8ff]
+    <button class="absolute w-[36px] h-[36px] md:w-[100px] md:h-[100px] bg-[#f4f8ff]
     rounded-full right-0 top-1/2 flex justify-center items-center ">
       <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full 
       flex justify-center items-center mix-blend-multiply">
@@ -1146,25 +1147,52 @@
     </button>
 
     <!-- main content -->
-    <div class="flex flex-row max-w-[960px] items-center 
-    mx-auto my-20 space-x-[10rem]">
+    <div class="flex flex-col xl:flex-row  max-w-[960px] items-center 
+    mx-auto my-20 xl:space-x-[10rem]">
       <!-- left img -->
+      <div class="relative">
       <img src="./images/testimonial.jpg" alt="" loading="lazy"
       height="320px" width="320px"
-      class="rounded-xl">
+      class="rounded-xl w-[250px] h-[250px] md:w-[320px] md:h-[320px]">
+     
+    </div>
+      
 
       <!-- right part  -->
-      <div class="max-w-[400px] ">
+
+      <!-- small screen -->
+      <div class="xl:hidden mt-4">
+        <p class="font-mullish font-extrabold text-2xl text-center">
+          Lorem Ipsum
+        </p>
+        <p class="font-mullish font-medium text-center my-2">
+          CEO, XYZ Engineering Company
+        </p>
+        <img src="./images/fake-company-logo.png" width="80" height="40" class="object-cover mx-auto">
+        <img src="./images/quotes.svg" class="w-[35px] h-[40px] -mb-2">
+        <p class="font-mullish text-3xl font-extralight max-w-[300px]">
+          Readymade Closed Wallet Solution For Quick Refunds
+        </p>
+        <button class="italic underline text-sm text-grayText">
+          Learn More
+        </button>
+      </div>
+
+      <!-- Large screen -->
+      <div class=" hidden xl:block max-w-[300px] md:max-w-[400px] flex flex-col text-center
+      md:text-left">
         <img src="./images/quotes.svg" alt=""
         width="35px" height="40px" 
-        class="-mb-2">
-        <p class="font-mullish text-3xl font-extralight">
+        class="-mb-2 xl:order-1 order-4">
+        <p class="font-mullish text-3xl font-extralight xl:order-1 order-5">
           Readymade Closed Wallet Solution For Quick Refunds</p>
-        <a href="">Learn More</a>
-        <h3 class="font-mullish font-extrabold text-2xl">Lorem Ipsum</h3>
-        <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
+        <a href="" class="xl:order-1 order-6">Learn More</a>
+        <h3 class="font-mullish font-extrabold text-2xl order-1
+        xl:order-1">Lorem Ipsum</h3>
+        <p class="font-mullish font-medium order-2 xl:order-1">CEO, XYZ Engineering Company</p>
         <img src="./images/fake-company-logo.png" alt=""
         width="80px" height="40px"
+        class="xl:order-1 order-3"
        >
       </div>
     </div>
@@ -1238,7 +1266,7 @@
       <!-- right Side -->
       <img src="./images/ctaImg.svg" alt=""
       width="240px" height="282px"
-      class="mt-16 pt-3"
+      class="mt-16 pt-3 hidden lg:block"
       >
     </div>
   </section>

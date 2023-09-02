@@ -194,7 +194,10 @@
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
             <!-- heading -->
             <h2 class="font-mullish text-center 
-            text-2xl leading-[1.2] font-extrabold">Accept Payments with Razorpay Payment Suite
+            text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments with Razorpay Payment Suite
+            </h2>
+            <h2 class="font-mullish text-center 
+            text-[44px] leading-[1.2] w-full font-bold md:hidden">Explore Razorpay Payment Suite
             </h2>
             <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
             <!-- Content -->
@@ -229,14 +232,15 @@
                     </ul>
 
                     <!-- for button and hyperlink -->
-                    <div class="flex  items-center space-x-4">
-                        <button class="bg-lightBlue w-fit text-white 
+                    <div class="flex flex-col-reverse md:flex-row md:items-center md:space-x-4
+                    gap-y-4 md:space-y-0">
+                        <button class="bg-lightBlue w-full md:w-fit text-white 
                         py-[14px] px-[18px] rounded-md
                         font-mullish font-bold
                          hover:bg-lightBlue500 translate-all duration-200">
                         Sign Up Now</button>
                         <!-- Hyperlink -->
-                        <div class="flex items-center cursor-pointer group">
+                        <div class="flex items-center cursor-pointer group ">
                             <a href="#"
                             class="font-mullish font-bold text-lightBlue500
                             group-hover:text-grayBlue transition-all duration-200">Know More</a>
@@ -248,10 +252,11 @@
                 </div>
 
                 <img src="./images/payment-suite.png" alt=""
-                class=" max-w-[600px] right-0 bottom-0 absolute">
+                class=" max-w-[600px] right-0 bottom-0 absolute hidden md:max-w-[400px] 
+                lg:max-w-[600px] md:block lg:block">
             </div>
 
-            <div class="w-full grid grid-cols-3 gap-4 mt-10">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
                 <!-- Box1 -->
                 <div class="w-full min-h-[15rem] relative cursor-pointer">
                     <img src="./images/payment-link-icon.svg" alt=""
@@ -622,11 +627,13 @@
                                 <span>View financial insights at a glance</span>
                             </li>
                         </ul>
-                        <div class="flex flex-row w-full items-center space-x-4">
-                            <button class="relative bg-lightBlue flex items-center 
-                            justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
+                        <div class="flex flex-col-reverse md:flex-row w-full md:items-center md:space-x-4
+                        gap-y-4 md:gap-y-0">
+                            <button class="relative bg-lightBlue flex items-center place-content-center
+                            md:justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
                              font-mullish font-bold
-                              hover:bg-lightBlue500 transition-all duration-200">Sign Up
+                              hover:bg-lightBlue500 transition-all duration-200
+                              self-stretch md:w-fit">Sign Up
 
                                 <div class="w-12 h-[60px] bg-greenLight absolute 
                                 right-6 skew-x-[20deg] flex justify-center items-center">
@@ -660,12 +667,13 @@
 
                     <!-- background image -->
                     <img src="./images/buisness-banking.png" alt="" loading="lazy"
-                    class="max-w-[600px] absolute right-0 bottom-0 z-5">
+                    class="max-w-[600px] absolute right-0 bottom-0 z-5
+                    hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
 
                 </div>
 
                 <!-- Card box -->
-                <div class="grid grid-cols-3 w-full gap-4 my-14">
+                <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
                     <!-- box1 -->
                     <div class="w-full min-h-[15rem] relative cursor-pointer">
                         <img src="./images/payment-link-icon.svg" alt=""
@@ -825,8 +833,9 @@
                 </div>
 
                 <!-- Demo Box-->
-                <div class="flex w-full flex-row justify-evenly items-center
-                border border-slate-700 mb-24 gap-y-6 p-8 relative rounded-md">
+                <div class="w-full flex-row justify-evenly items-center
+                border border-slate-700 mb-24 gap-y-6 p-8 relative rounded-md
+                hidden md:flex md:flex-col lg:flex-row  lg:flex">
                     <p class="font-mullish text-white text-xl">Check out the live demo to learn how RazorpayX works. 
                         <span class="font-bold">No sign-up required!</span>
                     </p>
